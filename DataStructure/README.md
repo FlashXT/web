@@ -1,4 +1,4 @@
-## Redirects:
+## Programs
 
 1. [perform Arithmatic Operations](https://github.com/FlashXT/codes/blob/main/DataStructure/prog01.c)
 
