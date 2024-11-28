@@ -1,3 +1,3 @@
 # Codes
 College Practicals.
-## Redirect [Data_Structure](https://github.com/FlashXT/codes/tree/main/DataStructure)
+## Redirect [Data Structure](https://github.com/FlashXT/codes/tree/main/DataStructure)
