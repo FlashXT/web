@@ -8,4 +8,4 @@
 
 
 
-Report [here](https://riotoreo.t.me) if error found.
+Report [he](https://riotoreo.t.me)[re](https://t.me/riotoreo) if error found.
