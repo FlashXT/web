@@ -23,7 +23,6 @@ int main()
     node *get_node();
     root = NULL;
 
-    system("cls");
     printf("\nProgram For Binary Search Tree\n");
 
     do
