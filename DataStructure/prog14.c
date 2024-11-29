@@ -19,10 +19,11 @@ int main()
     int choice;
     char ans;
     int key;
-    node *New, *root, *tmp, *parent;
+    node *New, *root, *temp, *parent;
     node *get_node();
     root = NULL;
 
+    system("cls");
     printf("\nProgram For Binary Search Tree\n");
 
     do
@@ -49,15 +50,16 @@ int main()
             break;
 
         case 2:
-            printf("\nEnter The Elements Which You Want To Search:\n");
+            printf("\nEnter The Element Which You Want To Search: ");
             scanf("%d", &key);
-            tmp = search(root, key, &parent);
-            printf("\nParent of Node %d is %d", tmp->data, parent->data);
+            temp = search(root, key, &parent);
+            printf("\nParent of Node %d is %d", temp->data, parent->data);
             break;
 
         case 3:
-            printf("\nEnter The Elements U Wish To Search:\n");
+            printf("\nEnter The Element U Want To Delete: ");
             scanf("%d", &key);
+            del(root, key);
             break;
 
         case 4:
@@ -65,7 +67,7 @@ int main()
                 printf("\nTree is Not Created");
             else
             {
-                printf("\nThe Tree is:\n");
+                printf("\nThe Tree is: ");
                 inorder(root);
                 printf("\n");
             }
@@ -73,7 +75,7 @@ int main()
         case 5:
             exit(0);
         }
-    } while (choice != 5);
+    } while (choice <= 5);
 }
 
 node *get_node()
@@ -125,29 +127,39 @@ node *search(node *root, int key, node **parent)
     return NULL;
 }
 
-// del function not working properly
+void inorder(node *temp)
+{
+    if (temp != NULL)
+    {
+        inorder(temp->left);
+        printf("%d ", temp->data);
+        inorder(temp->right);
+    }
+}
+
+// del function not working
 void del(node *root, int key)
 {
     node *temp, *parent, *temp_succ;
-    temp=search(root, key, &parent);
+    temp = search(root, key, &parent);
 
-    if (temp->left!=NULL && temp->right!=NULL)
+    if (temp->left != NULL && temp->right != NULL)
     {
-        parent=temp;
-        temp_succ=temp->right;
+        parent = temp;
+        temp_succ = temp->right;
 
-        while(temp_succ->left!=NULL)
+        while (temp_succ->left != NULL)
         {
-            parent=temp_succ;
-            temp_succ=temp_succ->left;
+            parent = temp_succ;
+            temp_succ = temp_succ->left;
         }
-        temp->data=temp_succ->data;
-        parent->right=NULL;
+        temp->data = temp_succ->data;
+        parent->right = NULL;
         printf("\nNow Deleted It !\n");
         return;
     }
 
-    if(temp->left!=NULL && temp->right!=NULL)
+    if (temp->left != NULL && temp->right != NULL)
     {
         if (parent->left == temp)
             parent->left = temp->right;
@@ -166,15 +178,5 @@ void del(node *root, int key)
             parent->right = NULL;
         printf("\n Now Deleted it!");
         return;
-    }
-}
-
-void inorder(node *temp)
-{
-    if (temp != NULL)
-    {
-        inorder(temp->left);
-        printf("%d ", temp->data);
-        inorder(temp->right);
     }
 }
