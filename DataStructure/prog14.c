@@ -125,6 +125,7 @@ node *search(node *root, int key, node **parent)
     return NULL;
 }
 
+// del function not working properly
 void del(node *root, int key)
 {
     node *temp, *parent, *temp_succ;
