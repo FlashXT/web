@@ -28,4 +28,8 @@
 
 14. [implement operations in Binary Search Tree](https://github.com/FlashXT/codes/blob/main/DataStructure/prog14.c)
 
-##
+15. [search an element in the array using  Linear Search](https://github.com/FlashXT/codes/blob/main/DataStructure/prog15.c)
+
+16. [search an element in the array using  binary Search](https://github.com/FlashXT/codes/blob/main/DataStructure/prog16.c)
+
+## end
