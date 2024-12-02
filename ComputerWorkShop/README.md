@@ -14,4 +14,8 @@
 
 7. [input in array and display : duplicate elements](https://github.com/FlashXT/codes/blob/main/ComputerWorkShop/prog07.c)
 
+8. [functions](https://github.com/FlashXT/codes/blob/main/ComputerWorkShop/prog08.c)
+
+9. [find max , min in 3 variables](https://github.com/FlashXT/codes/blob/main/ComputerWorkShop/prog09.c)
+
 ## end
