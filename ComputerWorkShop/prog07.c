@@ -1,10 +1,10 @@
-// input in array and display
+// input in array and display : duplicate elements
 
 #include <stdio.h>
 
 int main()
 {
-    int i, n;
+    int i, n, count = 0;
     printf("Enter Array size: ");
     scanf("%d", &n);
     int dabba[n];
@@ -22,30 +22,6 @@ int main()
     }
     printf("\n");
 
-    int sum = 0;
-    for (i = 0; i < n; i++)
-    {
-        sum += dabba[i];
-    }
-    printf("\nSum: %d", sum);
-
-    int max = dabba[0];
-    int min = dabba[0];
-
-    for (i = 0; i < n; i++)
-    {
-        if (dabba[i] > max)
-        {
-            max = dabba[i];
-        }
-        if (dabba[i] < min)
-        {
-            min = dabba[i];
-        }
-    }
-    printf("\nMax: %d\nMin: %d\n", max, min);
-
-    int count = 0;
     printf("\nDuplicate Elements: ");
     for (i = 0; i < n; i++)
     {
