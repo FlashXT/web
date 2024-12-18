@@ -30,6 +30,12 @@
 
 15. [search an element in the array using  Linear Search](https://github.com/FlashXT/codes/blob/main/DataStructure/prog15.c)
 
-16. [search an element in the array using  binary Search](https://github.com/FlashXT/codes/blob/main/DataStructure/prog16.c)
+16. [search an element in the array using  Binary Search](https://github.com/FlashXT/codes/blob/main/DataStructure/prog16.c)
+
+17. [arrange numbers using insertion sort](https://github.com/FlashXT/codes/blob/main/DataStructure/prog17.c)
+
+18. [implement queue using array](https://github.com/FlashXT/codes/blob/main/DataStructure/prog18.c)
+
+19. [implement queue using linked list](https://github.com/FlashXT/codes/blob/main/DataStructure/prog19.c)
 
 ## end
