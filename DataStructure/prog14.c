@@ -12,7 +12,7 @@ typedef struct bst
 void insert(node *, node *);
 void inorder(node *);
 node *search(node *, int, node **);
-void del(node *, int);
+void del(node **, int);
 
 int main()
 {
@@ -58,7 +58,7 @@ int main()
         case 3:
             printf("\nEnter The Element U Want To Delete: ");
             scanf("%d", &key);
-            del(root, key);
+            del(&root, key);
             break;
 
         case 4:
@@ -75,6 +75,7 @@ int main()
             exit(0);
         }
     } while (choice <= 5);
+    return 0;
 }
 
 node *get_node()
@@ -136,11 +137,16 @@ void inorder(node *temp)
     }
 }
 
-// del function not working
-void del(node *root, int key)
+void del(node **root, int key)
 {
     node *temp, *parent, *temp_succ;
-    temp = search(root, key, &parent);
+    temp = search(*root, key, &parent);
+
+    if (temp == NULL)
+    {
+        printf("\nElement not found!\n");
+        return;
+    }
 
     if (temp->left != NULL && temp->right != NULL)
     {
@@ -152,30 +158,36 @@ void del(node *root, int key)
             parent = temp_succ;
             temp_succ = temp_succ->left;
         }
-        temp->data = temp_succ->data;
-        parent->right = NULL;
-        printf("\nNow Deleted It !\n");
-        return;
-    }
 
-    if (temp->left != NULL && temp->right != NULL)
-    {
-        if (parent->left == temp)
-            parent->left = temp->right;
+        temp->data = temp_succ->data;
+
+        if (parent->left == temp_succ)
+        {
+            parent->left = temp_succ->right;
+        }
         else
-            parent->right = temp->right;
-        temp = NULL;
+        {
+            parent->right = temp_succ->right;
+        }
+        free(temp_succ);
+    }
+    else
+    {
+        node *child = (temp->left != NULL) ? temp->left : temp->right;
+
+        if (parent == NULL)
+        {
+            *root = child;
+        }
+        else if (parent->left == temp)
+        {
+            parent->left = child;
+        }
+        else
+        {
+            parent->right = child;
+        }
         free(temp);
-        printf("\n Now deleted it!");
-        return;
     }
-    if (temp->left == NULL && temp->right == NULL)
-    {
-        if (parent->left == temp)
-            parent->right = NULL;
-        else
-            parent->right = NULL;
-        printf("\n Now Deleted it!");
-        return;
-    }
+    printf("\nNode deleted successfully!\n");
 }
