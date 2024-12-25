@@ -26,7 +26,7 @@
 
 13. [tree traversal in C](https://github.com/FlashXT/codes/blob/main/DataStructure/prog13.c)
 
-14. [implement operations in Binary Search Tree](https://github.com/FlashXT/codes/blob/main/DataStructure/prog14.c) // delete function not working so dont copy that part
+14. [implement operations in Binary Search Tree](https://github.com/FlashXT/codes/blob/main/DataStructure/prog14.c)
 
 15. [search an element in the array using  Linear Search](https://github.com/FlashXT/codes/blob/main/DataStructure/prog15.c)
 
