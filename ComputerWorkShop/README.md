@@ -18,4 +18,6 @@
 
 9. [find max , min in 3 variables](https://github.com/FlashXT/codes/blob/main/ComputerWorkShop/prog09.c)
 
+10. [pointers declaration and dereferencing](https://github.com/FlashXT/codes/blob/main/ComputerWorkShop/prog10.c)
+
 ## end
