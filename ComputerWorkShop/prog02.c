@@ -1,7 +1,6 @@
 // wap to find cube of given range.
 
 #include<stdio.h>
-#include<stdlib.h>
 
 int main()
 {
