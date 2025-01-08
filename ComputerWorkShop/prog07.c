@@ -29,7 +29,7 @@ int main()
         {
             if (dabba[i] == dabba[j])
             {
-                printf("%d, ", dabba[i]);
+                printf("%d   ", dabba[i]);
                 count++;
             }
         }
