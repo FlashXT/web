@@ -15,6 +15,6 @@ int main()
         sum+=result;
         printf("\nCube of %d: %d", i, result);
     }
-    printf("\nSum: %d", sum);
+    printf("\nSum: %d\n\n", sum);
     return 0;
 }

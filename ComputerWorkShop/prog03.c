@@ -17,6 +17,6 @@ int main()
         result = number * i;
         printf("%d * %d = %d\n",number, i, result);
     }
-
+	printf("\n\n");
     return 0;
 }

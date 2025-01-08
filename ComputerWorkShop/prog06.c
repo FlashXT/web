@@ -36,6 +36,6 @@ int main()
             min = dabba[i];
         }
     }
-    printf("\nMax: %d\nMin: %d\n", max, min);
+    printf("\nMax: %d\nMin: %d\n\n", max, min);
     return 0;
 }

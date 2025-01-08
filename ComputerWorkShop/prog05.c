@@ -27,6 +27,6 @@ int main()
     {
         sum += dabba[i];
     }
-    printf("\nSum: %d", sum);
+    printf("\nSum: %d\n\n", sum);
     return 0;
 }

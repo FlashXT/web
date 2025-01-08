@@ -10,6 +10,6 @@ int main()
     printf("\nValue of a : %d", a);
     printf("\nValue of pointer p : %p", p);
     printf("\nMemory Address of a : %p", &a);
-    printf("\nDereferenced p : %d\n", *p);
+    printf("\nDereferenced p : %d\n\n", *p);
     return 0;
 }

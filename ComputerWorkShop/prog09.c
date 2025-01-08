@@ -17,14 +17,14 @@ int main()
 
 void max(int a, int b, int c)
 {
-    if(a>b && a>c) printf("\nMax Value: %d", a);
-    else if (b>c && b>a) printf("\nMax Value: %d", b);
+    if(a>b && a>c) printf("\nMax Value: %d\n", a);
+    else if (b>c && b>a) printf("\nMax Value: %d\n", b);
     else printf("\nMax Value: %d", c);
 }
 
 void min(int a, int b, int c)
 {
-    if(a<b && a<c) printf("\nMin Value: %d", a);
-    else if (b<c && b<a) printf("\nMin Value: %d", b);
-    else printf("\nMin Value: %d", c);
+    if(a<b && a<c) printf("\nMin Value: %d\n", a);
+    else if (b<c && b<a) printf("\nMin Value: %d\n", b);
+    else printf("\nMin Value: %d\n\n", c);
 }

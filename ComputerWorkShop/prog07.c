@@ -34,7 +34,9 @@ int main()
             }
         }
     }
+	
     if (!count)
         printf("Duplicate elements not found.\n\n");
+	printf("\n");
     return 0;
 }
