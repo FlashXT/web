@@ -16,17 +16,11 @@ int main()
     }
     printf("\nArray Created: ");
 
-    for (i = 0; i < n; i++)
-    {
-        printf("%d  ", dabba[i]);
-    }
+    for (i = 0; i < n; i++) printf("%d  ", dabba[i]);
     printf("\n");
 
     int sum = 0;
-    for (i = 0; i < n; i++)
-    {
-        sum += dabba[i];
-    }
+    for (i = 0; i < n; i++) sum += dabba[i];
     printf("\nSum: %d\n\n", sum);
     return 0;
 }

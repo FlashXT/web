@@ -38,4 +38,6 @@
 
 19. [implement queue using linked list](https://github.com/FlashXT/codes/blob/main/DataStructure/prog19.c)
 
+20. [quick sort program](https://github.com/FlashXT/codes/blob/main/DataStructure/prog20.c)
+
 ## end
